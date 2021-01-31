@@ -1,9 +1,10 @@
+<?php
+
 //A PHP array containing the data that we want to log.
 $dataToLog = array(
-    date("Y-m-d H:i:s"), //Date and time
-    $_SERVER['REMOTE_ADDR'], //IP address
-    'Clicked on item 4', //Custom text
-    'Number of items in cart is 2' //More custom text
+    $var1,
+    $var2,
+    'STORE THIS'
 );
  
 //Turn array into a delimited string using
@@ -22,3 +23,6 @@ $pathToFile = 'log_name.log';
 file_put_contents($pathToFile, $data, FILE_APPEND);
 
 //REMEMBER TO GIVE PERMISSIONS TO LOG FILE!!!!!!
+
+
+?>
